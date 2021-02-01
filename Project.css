@@ -1,0 +1,85 @@
+/*PROJECTS*/
+.Project-wrapper{
+    display: flex;
+    margin-top: 50px;
+    padding: 20px;
+}
+.wrap-E::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.Project-wrapper > div{
+    margin: 2px;
+}
+.projA{
+    flex: 1;
+    padding: 20px;
+}
+.projA h1{
+    font-size: 70px;
+    margin-top: 220px;
+    color: #4b4b4b;
+}
+.projA p{
+    color: #7c7a7a;
+}
+/*FOR RHE IMAGES OF PROJECTS*/
+.projB{
+    flex: 4;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+.box > div{
+    width: 30%;
+    float: left;
+    margin: 15px 15px;
+}
+.hoverMe a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    border: solid white 1px;
+    transition: 0.2s;
+    transform: translate(-40px);
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    bottom: 100px;
+}
+.content:hover .hoverMe a{
+    transform: translate(0);
+    opacity: 1;
+    visibility: visible;
+}
+.content .hoverMe a:hover{
+    background-color: white;
+    color: rgb(90, 89, 88);
+}
+.content img{
+    border-radius: 4px;
+}
+
+
+
+@media(max-width:1000px){
+    /*PROJECTS*/
+    .projA h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
+    .Project-wrapper{
+        flex-direction: column;
+        text-align: center;
+        text-align: center;
+        justify-content:center ;
+    }
+    .box > div{
+        width: 80%;
+        float: left;
+        margin: 15px 55px;
+    }
+}

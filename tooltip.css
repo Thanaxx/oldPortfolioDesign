@@ -1,0 +1,49 @@
+.toolTipA, .toolTipB, .toolTipC, .toolTipD, .toolTipE, .toolTipF{
+    position: relative;
+    display: inline-block;
+}
+.textA, .textB, .textC, .textD, .textE, .textF{
+    visibility: hidden;
+    background-color: #67a08c;
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+    padding: 4px 15px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left:70px;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.toolTipA:hover .textA{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTipB:hover .textB{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTipC:hover .textC{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTipD:hover .textD{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolTipE:hover .textE{
+    visibility: visible;
+    opacity: 1;
+}
+.toolTipF:hover .textF{
+    visibility: visible;
+    opacity: 1;
+}

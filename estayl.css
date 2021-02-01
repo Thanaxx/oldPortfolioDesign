@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffffff;
+    color: #cecece;
+}
+.portfolio-wrapper::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.mobile{
+    display: none;
+}
+/*Navigation design of the page*/
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 7%;
+    height: 640px;
+    background-color: #4b4b4b;
+}
+.navigation ul{
+    margin-top: 50px;
+}
+.navigation ul li{
+    margin: 14px 0;
+    padding: 0 20px;
+}
+
+.navigation a{
+    color: #888787;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.navigation a:hover{
+    color: #e0e0e0;
+    text-decoration: underline #67a08c;
+}
+.navigation h3{
+    font-size: 60px;
+    text-align: center;
+    color: #17807a;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*Separate the right side*/
+.separateTheRightSide{
+    width: 93%;
+    float: right;
+}
+
+/*MY NAME ABOVE THE IMAGE STYLE*/
+.context{
+    color: #4b4b4b;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    text-align: left;
+}
+.context h1{
+    font-size: 85px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.context p{
+    font-weight: lighter;
+    color: #523500;
+    font-size: 22px;
+}
+/*button for contacts*/
+#cont{
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: solid 1px #67a08c;
+    outline: solid 1px #67a08c;
+}
+#cont:hover{
+    background-color: #4b4b4b;
+    color: white;
+    outline: none;
+    border: none;
+}
+#cont a{
+    color: #67a08c;
+    text-decoration: none;
+}
+#cont a:hover{
+    color: white;
+}
+
+/*Contact page for the client/user */
+.wrap-G{
+    padding: 100px 0;
+}
+.emailWrapper p{
+    color: #4d4d4d;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.emailWrapper{
+    color: blanchedalmond;
+    background-color: #ffffff;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+input[type=text],input[type=email]{
+    width: 100%;
+    margin: 15px 0;
+    padding: 7px;
+    border: solid 1px #ffffff;
+    border-bottom: solid 1px #918f8f;
+    outline: none;
+    background-color: #ffffff;
+    float: right;
+}
+textarea{
+    width: 100%;
+    margin: 2px;
+    padding: 7px;
+    border: solid 1px #ffffff;
+    outline: none;
+    background-color: #dfdfdf;
+    float: right;
+    border: none;
+}
+
+#bt{
+    width: 25%;
+    padding: 10px 0;
+    margin: 15px 0;
+    background-color: #67a08c;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+}
+#bt:hover{
+    background-color: #444444;
+    color: #67a08c;
+}
+
+
+
+/*FOOTER*/
+.wrap-F{
+    padding-top: 20px;
+    text-align: center;
+}
+footer{
+    padding: 5px;
+    background-color: #4b4b4b;
+    font-family: apple-system;
+}
+
+.below{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #c2bebe;
+}
+footer a{
+    margin:0 10px;
+}
+.below{
+    display: flex;
+}
+.below > div{
+    flex: 1;
+}
+
+
+
+/*RESPONSIVENESS OF THE WEBSITE*/
+@media(max-width:1000px){
+    .navigation, #open, .navigation h2{
+        display: none;
+    }
+    .wrap-A{
+        width: 100%;
+        height: auto;
+    }
+    .wrapperModal{
+        width: 90%;
+    }
+    #meg{
+        display: none;
+    }
+
+
+    /*FOR MOBILE VIEW side bar*/
+.mobile{
+    display: block;
+}
+.menu{
+    background-color: #ffffff;
+    position: fixed;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    transition: .4s;
+    top: 0;
+}
+.menu h2{
+    color: #3a3a3a;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #67a08c;
+    display: block;
+    padding: 7px 15px;
+    font-weight: lighter;
+}
+.menu a:hover{
+    background-color: #706969;
+    color: white;
+}
+#closs{
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 33px;
+    color: teal;
+}
+#closs:hover{
+    background-color: #ffffff;
+    color: rgb(49, 49, 49);
+}
+.opin{
+    color: #4b4b4b;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+}
+.opin:hover{
+    background-color: white;
+}
+
+    input[type=text],input[type=email]{
+        width: 100%;
+        padding: 5px;
+        margin: 3px;
+    }
+    #message{
+        width: 100%;
+        margin: 3px;
+        padding: 3px;
+    }
+    header p{
+        padding: 6px;
+    }
+
+
+    /*for my name at the top page or home page*/
+    .context{
+        color: #4b4b4b;
+        position: relative;
+        top: 80px;
+        left: 50px;
+        text-align: left;
+        margin-bottom: 200px;
+    }
+    .context h1{
+        font-size: 50px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .context p{
+        font-weight: lighter;
+        color: #444444;
+        font-size: 17px;
+    }
+
+    /*Email*/
+    .emailWrapper{
+        width: 80%;
+    }
+    #bt{
+        width: 30%;
+        padding: 7px;
+    }
+    /*footer*/
+    .cont h2{
+        font-size: 15px;
+    }
+    .cont p{
+        font-size: 13px;
+        font-weight: lighter;
+    }
+    #containerA{
+        transition: 0.5s;
+    }
+    
+}
+/*ARROW UP*/
+#tap{
+    float: right;
+    position: fixed;
+    right: 20px;
+    bottom: 40px;
+    color: #706a70;
+    cursor: pointer;
+    outline: none;
+    border: solid #706a70 1px;
+    z-index: 99;
+    border-radius: 50px;
+    display: none;
+}
+#tap:hover{
+    color: #67a08c;
+}
+
+/*FOR SMOOTH SCROLLING*/
+html{
+    scroll-behavior: smooth;
+} 
